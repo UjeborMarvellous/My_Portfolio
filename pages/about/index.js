@@ -30,19 +30,19 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaWordpress />,
-          <FaBootstrap />,
-          <BiLogoTypescript />
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <FaWordpress key="wordpress" />,
+          <FaBootstrap key="bootstrap" />,
+          <BiLogoTypescript key="typescript" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobephotoshop />],
+        icons: [<FaFigma key="figma" />, <SiAdobephotoshop key="photoshop" />],
       },
     ],
   },
@@ -192,7 +192,7 @@ const About = () => {
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:text-left xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
@@ -202,7 +202,7 @@ const About = () => {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons.map((icon, itemIndex) => {
                       return <div className="text-2xl">{icon}</div>;
                     })}
                   </div>
