@@ -3,11 +3,13 @@ import Bulb from "../../components/Bulb";
 import WorkSlider from "../../components/WorkSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Work = () => {
   return (
     <div className="md:bg-black/80 bg-black py-36 flex items-center h-full">
       <Circles />
+      <ParticlesContainer />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
