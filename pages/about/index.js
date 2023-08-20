@@ -190,7 +190,7 @@ const About = () => {
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:text-left xl:items-start">
-            {aboutData.map((item, itemIndex) => {
+            {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
@@ -200,8 +200,8 @@ const About = () => {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons.map((icon, itemIndex) => {
-                      return <div className="text-2xl" key={itemIndex}>{icon}</div>;
+                    {item.icons?.map((icon, itemIndex) => {
+                      return <div className="text-2xl transition-all duration-500" key={itemIndex}>{icon}</div>;
                     })}
                   </div>
                 </div>
