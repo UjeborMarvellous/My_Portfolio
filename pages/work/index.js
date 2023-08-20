@@ -18,7 +18,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-20"
+              className="text-2xl font-semibold pt-16 pb-6 md:h2 xl:mt-20"
             >
               {" "}
               My Works <span className="text-pink-600">.</span>

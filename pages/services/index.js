@@ -36,7 +36,7 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 const Services = () => {
   return (
     <div className="md:bg-black/80 bg-black py-36 flex items-center h-full">
-      <Circles />
+      {/* <Circles /> */}
       <ParticlesContainer />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
