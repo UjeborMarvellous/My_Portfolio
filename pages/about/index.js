@@ -14,12 +14,9 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 
-import { BiLogoTypescript } from 'react-icons/bi'
+import { BiLogoTypescript } from "react-icons/bi";
 
-import {
-  SiNextdotjs,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { SiNextdotjs, SiAdobephotoshop } from "react-icons/si";
 import ParticlesContainer from "../../components/ParticlesContainer";
 
 //  data
@@ -72,7 +69,7 @@ const aboutData = [
       {
         title: "Web Development - Coaching Crea8Lab ( Remote )",
         stage: "April 2023 - Till Date",
-      }
+      },
     ],
   },
   {
@@ -87,7 +84,8 @@ const aboutData = [
         stage: "2017 - 2018",
       },
       {
-        title: "Certified Graphic Designer - Bliztech Education, Abuja, Nigeria",
+        title:
+          "Certified Graphic Designer - Bliztech Education, Abuja, Nigeria",
         stage: "2010",
       },
     ],
@@ -203,7 +201,7 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons.map((icon, itemIndex) => {
-                      return <div className="text-2xl">{icon}</div>;
+                      return <div className="text-2xl" key={itemIndex}>{icon}</div>;
                     })}
                   </div>
                 </div>
