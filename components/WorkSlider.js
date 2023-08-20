@@ -81,13 +81,13 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[280px] sm:h-[440px]"
     >
-      {workSlides.slides.map((slide, index) => {
+      {workSlides.slides.map((slide, slideIndex) => { // Use slideIndex as key
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={slideIndex}>
             <div className="grid grid-cols-2 gap-6 cursor-pointer">
-              {slide.images.map((image, index) => {
+              {slide.images.map((image, imageIndex) => { // Use imageIndex as key
                 return (
-                  <a href={image.Links} className="relative rounded-lg overflow-hidden flex items-center justify-center group">
+                  <a key={imageIndex} href={image.Links} className="relative rounded-lg overflow-hidden flex items-center justify-center group">
                     <div className="flex items-center justify-center relative overflow-hidden">
                       <Image src={image.path} width={600} height={300} alt="" />
                       <div className="absolute bg-black/90 from-transparent opacity-0 group-hover:opacity-80 transition-all duration-700 h-full w-full text-center px-10 py-16 text-xs md:text-2xl font-semibold group-hover:-translate-y-[0.01px] transition-all translate-y-full font-sora">{image.Name}</div>
