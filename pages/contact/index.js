@@ -16,7 +16,7 @@ const Contact = () => {
               <input type="text" placeholder="Subject" className="bg-transparent border border-white/20 rounded-lg py-3 w-full px-6 focus:border focus:border-green-600 placeholder:text-white/20"/>
               <textarea name="" id=""  placeholder="Message" className="bg-transparent border border-white/20 rounded-lg py-3 w-full px-6 focus:border focus:border-green-600 placeholder:text-white/20 pb-32"></textarea> 
               <button className="btn rounded-full border border-white/50 max-w-[50%] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-pink-600 group">
-                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">Let's talk</span>
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">Let us talk</span>
                 <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all dutation-300 absolute text-[32px]"/>
               </button>
           </form>
