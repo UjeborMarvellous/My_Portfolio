@@ -2,19 +2,19 @@
 const testimonialData = [
   {
     image: '/black03.jpg',
-    name: 'Mark Smith',
+    name: 'Okeymmadu Eric',
     message:
       'I gained remarkable value from his service; he fully harnessed the potential of the work I entrusted to him, exceeding my expectations with exceptional results.',
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Taya',
+    name: 'Victory Sarah',
     message:
       'The outcomes I obtained were exceptional; his service went above and beyond my initial expectations.I am extremely pleased with the level of service I received.',
   },
   {
     image: '/t-avt-3.png',
-    name: 'John Stone',
+    name: 'Praise Onubiyi',
     message:
       'I was pleasantly surprised by the remarkable value his service provided; he skillfully maximized the potential of my project, delivering outstanding results that exceeded my expectations.',
   },
